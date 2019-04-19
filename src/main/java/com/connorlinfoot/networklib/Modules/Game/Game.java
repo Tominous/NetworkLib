@@ -122,17 +122,17 @@ public class Game extends Module {
             player.getPlayer().setLevel(0);
             player.getPlayer().setExp(0);
             player.getPlayer().setGameMode(GameMode.SURVIVAL); // TODO Use an option for this?
-//            addStats(covePlayer.getPlayer(), StatType.PLAY, 1, null); // TODO stat system
-//            if (!getDescription().equals("")) { // TODO Description support
-//                covePlayer.sendCentredMessage("");
-//                covePlayer.sendCentredMessage(getDescription());
-//                covePlayer.sendCentredMessage("");
-//            }
+            addStats(covePlayer.getPlayer(), StatType.PLAY, 1, null); // TODO stat system
+            if (!getDescription().equals("")) { // TODO Description support
+                covePlayer.sendCentredMessage("");
+                covePlayer.sendCentredMessage(getDescription());
+                covePlayer.sendCentredMessage("");
+            }
         }
 
-//        if (getGameSettings().isGiveKitsOnStart()) // TODO Kit system
-//            giveAllPlayersKits();
-//        doAllScoreboards(); // TODO Scoreboards
+        if (getGameSettings().isGiveKitsOnStart()) // TODO Kit system
+            giveAllPlayersKits();
+        doAllScoreboards(); // TODO Scoreboards
     }
 
     public void endGame(GamePlayer gamePlayer) {
